@@ -102,7 +102,12 @@ class SettingsPage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
+      bottomNavigationBar: ClipRRect(
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(20),
+          topRight: Radius.circular(20),
+      ),
+      child: BottomNavigationBar(
         backgroundColor: brown,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white70,
@@ -131,6 +136,7 @@ class SettingsPage extends StatelessWidget {
           }
         },
       ),
+    )
     );
   }
 }

@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
         children: [
           // Background image with overlay
           SizedBox(
-            height: 340,
+            height: 330,
             width: double.infinity,
             child: Stack(
               fit: StackFit.expand,
@@ -110,7 +110,7 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                 ),
-                const SizedBox(height: 24),
+                const SizedBox(height: 26),
                 // Time and date
                 const Text(
                   "07:40",
@@ -137,7 +137,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       _CheckButton(
                         label: "Check In",
-                        icon: Icons.touch_app,
+                        icon: Icons.touch_app_outlined,
                         color: brown,
                         onTap: () {
                           showAttendanceSuccessDialog(context);
@@ -145,7 +145,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       _CheckButton(
                         label: "Check out",
-                        icon: Icons.touch_app,
+                        icon: Icons.touch_app_outlined,
                         color: brown,
                         onTap: () {
                           showAttendanceSuccessDialog(context);
@@ -246,7 +246,12 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
+      bottomNavigationBar: ClipRRect(
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(20),
+          topRight: Radius.circular(20),
+        ),
+      child: BottomNavigationBar(
         backgroundColor: brown,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white70,
@@ -281,7 +286,8 @@ class _HomePageState extends State<HomePage> {
           }
         },
       ),
-    );
+    )
+  );
   }
 }
 

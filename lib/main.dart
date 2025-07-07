@@ -45,6 +45,7 @@ class MyApp extends StatelessWidget {
         '/privacy_policy': (context) => const PrivacyPolicyPage(),
         '/terms_and_conditions': (context) => const TermsAndConditions(), // Reuse for terms
         '/help_support': (context) => const HelpSupportPage(), // Add your help/support page
+        
       },
     );
   }

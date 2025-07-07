@@ -31,6 +31,13 @@ class _ProfilePageState extends State<ProfilePage> {
     "Pakistani",
     "Saudi",
     "Egyptian",
+    "Nepali",
+    "Sri Lankan",
+    "Maldivian",
+    "Afghan",
+    "Omani",
+    "Kuwaiti",
+    "Qatari",
     "Others"
   ];
 
@@ -76,8 +83,18 @@ class _ProfilePageState extends State<ProfilePage> {
       });
       // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Profile updated!')),
-      );
+        SnackBar(
+          content: const Text(
+            'Profile updated!', style: TextStyle(color: Colors.white)
+          ),
+          backgroundColor: Colors.green[800],
+          duration: const Duration(seconds: 2),
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(11),
+          ),
+      )
+      );    
     }
   }
 
