@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "756443387266",
+    "project_id": "wise-513db",
+    "storage_bucket": "wise-513db.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756443387266:android:b6e66cdc08b0214c736b9b",
+        "android_client_info": {
+          "package_name": "com.example.wise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbYOnGwXPl0gdt2HR1Qn8CFBl3P4LS9Xs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
