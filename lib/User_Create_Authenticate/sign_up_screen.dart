@@ -304,36 +304,44 @@ class _SignUpPageState extends State<SignUpPage> {
                         const SizedBox(height: 32),
 
                         // Sign In Link (on next line)
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            const Text(
-                              "Already Sign Up?",
-                              style: TextStyle(
-                                color: Colors.black54,
-                                fontSize: 16,
-                              ),
-                            ),
-                            TextButton(
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                  builder: (context) => const SignInPage()),
-                                );
-                                // Go back to sign in
-                              },
-                              child: const Text(
-                                "Sign In",
-                                style: TextStyle(
-                                  color: brown,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
+                        Align(
+                          alignment: Alignment.bottomRight,
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                                top: 32, right: 8, bottom: 8),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const Text(
+                                  "Already Sign Up?",
+                                  style: TextStyle(
+                                    color: Colors.black54,
+                                    fontSize: 16,
+                                  ),
                                 ),
-                              ),
+                                TextButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              const SignInPage()),
+                                    );
+                                  },
+                                  child: const Text(
+                                    "Sign In",
+                                    style: TextStyle(
+                                      color: brown,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
+                          ),
+                        )
                       ],
                     ),
                   ),
